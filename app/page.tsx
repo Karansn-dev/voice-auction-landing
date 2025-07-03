@@ -84,6 +84,9 @@ export default function VoiceAuctionLanding() {
             </div>
 
             <nav className="hidden md:flex items-center space-x-8">
+              <Link href="/live-bidding" className="text-slate-600 hover:text-blue-900 transition-colors px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-blue-200 active:bg-blue-50 active:text-blue-900">
+                Live Bidding
+              </Link>
               <a href="#features" className="text-slate-600 hover:text-blue-900 transition-colors px-2 py-1 rounded focus:outline-none focus:ring-2 focus:ring-blue-200 active:bg-blue-50 active:text-blue-900">
                 Features
               </a>
@@ -107,7 +110,9 @@ export default function VoiceAuctionLanding() {
                   Sign In
                 </button>
               </Link>
-              <Button className="bg-blue-900 hover:bg-blue-800 text-white">Start Bidding</Button>
+              <Link href="/live-bidding">
+                <Button className="bg-blue-900 hover:bg-blue-800 text-white">Start Bidding</Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -131,7 +136,7 @@ export default function VoiceAuctionLanding() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/onboarding">
+                <Link href="/live-bidding">
                   <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 text-lg">
                     Start Bidding Now
                     <ArrowRight className="ml-2 w-5 h-5" />
@@ -530,10 +535,12 @@ export default function VoiceAuctionLanding() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button size="lg" className="bg-white text-blue-900 hover:bg-slate-100 px-8 py-4 text-lg">
-              Start Bidding Now
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <Link href="/live-bidding">
+              <Button size="lg" className="bg-white text-blue-900 hover:bg-slate-100 px-8 py-4 text-lg">
+                Start Bidding Now
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
             <Button
               size="lg"
               variant="outline"
@@ -565,6 +572,11 @@ export default function VoiceAuctionLanding() {
             <div>
               <h3 className="font-semibold mb-4">Product</h3>
               <ul className="space-y-2 text-slate-400">
+                <li>
+                  <Link href="/live-bidding" className="hover:text-white transition-colors">
+                    Live Bidding
+                  </Link>
+                </li>
                 <li>
                   <Link href="#" className="hover:text-white transition-colors">
                     Features
